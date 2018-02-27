@@ -5,7 +5,7 @@ Description:
 The query auto executor program run to execute SQL queries from specified directory and AWS redshift cluster. A report will be generated that summarize query results with execution time. The purpose of the program is for rerun exisiting queries, compare performance on different clusters and find syntax error on sql.
 
 ================================================================
-Directory
+Directory 
 ================================================================
 
 sql-qry/
