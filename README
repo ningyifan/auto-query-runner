@@ -1,0 +1,42 @@
+================================================================
+Description:
+================================================================
+
+The query auto executor program run to execute SQL queries from specified directory and AWS redshift cluster. A report will be generated that summarize query results with execution time. The purpose of the program is for rerun exisiting queries, compare performance on different clusters and find syntax error on sql.
+
+================================================================
+Directory
+================================================================
+
+sql-qry/
+folder for all sql queries. 
+
+test-qry/
+folder for test sql scripts
+
+database/
+database connection methods
+
+config/
+redshift connection configuration 
+
+================================================================
+How to run
+================================================================
+
+$ cd ohdsi_query_rewrite/trunk/auto-qry-runner/
+
+$ python run.py <redshift db, options in config/config.json> <directory for queries> <isVerbose OPTIONS (0: not verbose, 1: verbose)>
+
+Example:
+$ python run.py french sql-qry/demo-qry/ 0
+
+Save summary to text file
+$ python run.py french sql-qry/demo-qry/ 0 > report.txt
+
+Current redshift clusters added in configuration:
+----------------------------------------
+option	| redshift cluster
+pmtx	| prod_pmtx.full_201706_omop_v5
+french	| prod_dafr.full_2017q3_omop_v5
+----------------------------------------
