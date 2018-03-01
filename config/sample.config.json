@@ -1,0 +1,18 @@
+{
+    "pmtx":{	
+        "host": "",
+	"port": "5439",
+        "user": "",
+        "passwd": "",
+	"dbname": "prod_pmtx",
+        "dbschema": "full_201706_omop_v5"
+    },
+    "french":{
+	"host": "",
+	"port": "5439",
+        "user": "",
+        "passwd": "",
+	"dbname": "prod_dafr",
+        "dbschema": "full_2017q3_omop_v5"
+    }
+}
